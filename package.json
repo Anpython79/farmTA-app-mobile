@@ -1,0 +1,57 @@
+{
+  "name": "farmta-app-mobile",
+  "version": "1.0.0",
+  "description": "Mobile app for farm management - Ứng dụng quản lý trang trại",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:ios": "cd ios && xcodebuild -workspace farmTA.xcworkspace -scheme farmTA -configuration Release",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/bottom-tabs": "^6.5.0",
+    "@react-navigation/stack": "^6.3.0",
+    "react-native-screens": "^3.20.0",
+    "react-native-safe-area-context": "^4.5.0",
+    "axios": "^1.4.0",
+    "redux": "^4.2.1",
+    "react-redux": "^8.1.1",
+    "redux-thunk": "^2.4.2",
+    "moment": "^2.29.4",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-reanimated": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@testing-library/react-native": "^12.0.0",
+    "jest": "^29.5.0",
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8",
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "typescript": "^5.1.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "author": "Anpython79",
+  "license": "MIT"
+}
